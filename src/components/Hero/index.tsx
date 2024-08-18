@@ -46,7 +46,7 @@ function Hero() {
   const slideImg = [TNT, UPS, DHL, FedEx, TNT, UPS, DHL, FedEx];
   return (
     <div className="">
-      <div className='w-10/12 max-w-container flex mx-auto items-center justify-center mt-[20px]'>
+      <div className='w-10/12 max-w-container flex mx-auto items-center justify-center mt-[150px] lg:mt-[20px]'>
         <div className="w-full lg:w-7/12 ">
           <h1 className="">Fastest <span className="text-primary font-bold">Parcel  <br />
             Delivery </span> & Easy Pickup</h1>

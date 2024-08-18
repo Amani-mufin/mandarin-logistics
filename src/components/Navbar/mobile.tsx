@@ -10,7 +10,7 @@ export default function MobileDrawer({ open, setOpen }: IProps) {
   const menu = ["Why Mandarin?", "Services", "Tracking", "Pricing"];
 
   return (
-    <Dialog open={open} onClose={setOpen} className="relative z-10">
+    <Dialog open={open} onClose={setOpen} className="relative z-50">
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-[#111111] opacity-55 transition-opacity duration-500 ease-in-out data-[closed]:opacity-0"

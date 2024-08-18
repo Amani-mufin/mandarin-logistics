@@ -7,7 +7,9 @@ function Navbar() {
   const menu = ["Why Mandarin?", "Services", "Tracking", "Pricing"];
   const [open, setOpen] = useState(false)
   return (
-    <nav className='flex max-w-container w-10/12 justify-between items-center text-[14px] text-[#232323] py-5  mx-auto leading-[22px]'>
+    
+    <nav className=' bg-white z-50 fixed top-0 left-0 right-0 lg:relative '>
+    <div className='flex  max-w-container w-10/12 justify-between items-center text-[14px] text-[#232323] py-5  mx-auto leading-[22px]'>
       <div className="logo">
         <img src={logo} alt="logo" /></div>
       <ul className='lg:flex gap-[30px] hidden'>
@@ -22,6 +24,7 @@ function Navbar() {
 
       <img src={Menu} alt="menu" className='lg:hidden' onClick={() => setOpen(!open)} />
       <MobileDrawer open={open} setOpen={setOpen} />
+    </div>
     </nav>
   )
 }
