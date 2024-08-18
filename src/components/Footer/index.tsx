@@ -13,10 +13,10 @@ function Footer() {
           <div className="logo">
             <img src={logo} alt="logo" /></div>
 
-          <div className="flex gap-6 items-center">
-            <img src={FaceBook} alt="facebook" />
-            <img src={Instagram} alt="instagram" />
-            <img src={Twitter} alt="twitter" />
+          <div className="flex gap-6 items-center mt-4 lg:mt-0">
+            <img src={FaceBook} alt="facebook" className='cursor-pointer w-[32px] h-[32px] lg:w-[43px] lg:h-[43px]' />
+            <img src={Instagram} alt="instagram" className='cursor-pointer w-[32px] h-[32px] lg:w-[43px] lg:h-[43px]' />
+            <img src={Twitter} alt="twitter" className='cursor-pointer w-[32px] h-[32px] lg:w-[43px] lg:h-[43px]' />
 
           </div>
         </div>

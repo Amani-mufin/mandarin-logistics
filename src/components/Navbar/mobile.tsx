@@ -1,5 +1,6 @@
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import CloseIcon from '../../assets/icons/close-circle.png'
+import { menuURLAndLink } from '../../utils'
 
 type IProps = {
   open: boolean
@@ -42,8 +43,8 @@ export default function MobileDrawer({ open, setOpen }: IProps) {
                 </div>
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
                   <ul className='flex flex-col gap-[30px] mt-[30px]'>
-                    {menu.map((item, index) => (
-                      <li key={index} className=' hover-effect cursor-pointer transition-all'>{item}</li>
+                    {menuURLAndLink.map((item, index) => (
+                      <li key={index} onClick={() => setOpen(false)} className='hover-effect cursor-pointer transition-all'><a href={item.url}>{item.name}</a> </li>
                     ))}
                   </ul>
                   <div className="flex flex-col gap-[30px] items-start mt-14">

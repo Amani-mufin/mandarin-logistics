@@ -1,5 +1,5 @@
 import AboutUs from "../components/AboutUs";
-import ContactUs from "../components/ContactUs";
+import ContactUs from "../components/Services";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Nav from "../components/Navbar";

@@ -6,7 +6,7 @@ import AppStore from "../../assets/images/app_store.png"
 
 function ContactUs() {
   return (
-    <div className="">
+    <div className="" id="services">
       <div className='lg:text-center mt-[100px] w-10/12 mx-auto max-w-container'>
         <p className='text-[#9B9B9B] font-normal text-[14px] leading-[22px]'>BUSINESS SOLUTIONS</p>
         <h2 className='font-bold text-[40px] leading-[50px]'>Enjoy our <span className='text-primary font-bold'> premium delivery</span> service</h2>

@@ -1,6 +1,7 @@
-import Avatar from "../../assets/images/avatar.png"
+
 import Twitter from "../../assets/icons/twitter.png"
 import Slider from "react-slick";
+import { TestimonialData } from "../../utils";
 
 
 function Testimonial() {
@@ -41,26 +42,7 @@ function Testimonial() {
     ]
   };
 
-  const TestimonialData = [
-    {
-      name: "Candice Wu",
-      text: "We’ve been using Untitled to kick start every new project and can’t imagine working without it.",
-      img: Avatar,
-      userName: "@Candice"
-    },
-    {
-      name: "Candice Wu",
-      text: "We’ve been using Untitled to kick start every new project and can’t imagine working without it.",
-      img: Avatar,
-      userName: "@Candice"
-    },
-    {
-      name: "Candice Wu",
-      text: "We’ve been using Untitled to kick start every new project and can’t imagine working without it.",
-      img: Avatar,
-      userName: "@Candice"
-    }
-  ]
+
   return (
     <div className=' max-w-container mx-auto w-10/12 mt-[100px]'>
       <div className=" lg:ml-10 mb-10">
@@ -70,7 +52,6 @@ function Testimonial() {
       </div>
 
       <Slider {...settings} className=" !flex gap-2">{
-
         TestimonialData.map((item, index) => (
           <div key={index} className="border border-1 cursor-pointer border-[#DDDDDD]  !w-[280px] md:!w-[320px] lg:!w-[415px] p-[16px] rounded-[16px] text-[#101828] text-[14px]  ">
             <div className="flex gap-3 text-sm leading-[20px]">
