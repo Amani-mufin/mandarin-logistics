@@ -8,7 +8,6 @@ type IProps = {
 }
 
 export default function MobileDrawer({ open, setOpen }: IProps) {
-  const menu = ["Why Mandarin?", "Services", "Tracking", "Pricing"];
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-50">
